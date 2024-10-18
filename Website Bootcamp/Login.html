@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="Loginguide.css">
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="Login.css">
+        
+       
+    <title>login</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary px-5">
+    <div class="container-fluid">
+      <div class="navbar-brand">
+        <img src="./img/navbar.svg" alt="">
+        <a class="navbar-brand" href="Home.html">Reto<span>Gizi</span></a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false"aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="Home.html">
+              <img src="./img/beranda.svg" alt="">Beranda</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Artikel.html">
+              <img src="./img/artikel.svg" alt="">Artikel</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Konsultasi.html">
+              <img src="./img/tanya-dokter.svg" alt="">Tanya Dokter</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="katering.html">
+              <img src="./img/katering.svg" alt="">Katering</a>
+          </li>
+
+          <div class="login-register d-flex">
+            <li class="nav-item">
+              <a class="masuk nav-link" href="Login.html">Masuk</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Daftar.html">Daftar Sekarang</a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="page-content">
+    <div class="right-column">
+      <div class="div">
+        <div class="top">
+          <div class="secondary-headline">Daftar Akun</div>
+        </div>
+      </div>
+      <div class="form-fields">
+        <div class="text-field-2">
+          <div class="div">
+            <div class="label">Email</div>
+            <input id="emailInput" class="field" placeholder="Masukan Email" type="email"></input>
+          </div>
+        </div>
+        <div class="text-field-2">
+          <div class="div">
+            <div class="label">Password</div>
+            <div class="div">
+              <input id="passwordInput" class="field" placeholder="Masukan Password" type="password"></input>
+            </div>
+          </div>
+        </div>
+        <div class="controls-with-label">
+          <input type="checkbox" class="form-check-input" id="rememberMe">
+          <label class="form-check-label" for="rememberMe">Ingatkan Saya</label>
+        </div>
+        <div class="buttons-group">
+          <button type="button" class="btn btn-primary" onclick="login()">Masuk</button>
+        </div>
+      </div>
+      <img class="sep" src="img/sep.svg" />
+    </div>
+    <img class="placeholder-picture" src="img/picture.png"></img>
+  </div>
+  
+  <script>
+    function login() {
+      // Perform your login logic here (e.g., check email and password)
+      const email = document.getElementById("emailInput").value;
+      const password = document.getElementById("passwordInput").value;
+  
+      // Replace the following condition with your actual login logic
+      if (email === "ikramjundulloh@gmail.com" && password === "ikram123") {
+        // If login is successful, show an alert
+        alert("Login successful");
+        // Redirect to the "mainpage/index.html"
+        window.location.href = "/retogizi(user)/mainpage/index.html";
+      } else {
+        // If login fails, you can show an error message or take other actions
+        alert("Login failed. Please check your email and password.");
+      }
+    }
+  </script>
+  
+
+  </body>
+  </html>
